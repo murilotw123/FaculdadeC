@@ -47,17 +47,19 @@ int main() {
         scanf(" %c", &resultado);
 
         // Usando if e else para verificar o resultado
+        
+        while (resultado != 'v' && (resultado !='V') && (resultado !='d') && (resultado !='D') && (resultado !='e') && (resultado !='E')){
+			 printf("Opção invalida! Use V, P ou E.\n");
+			 scanf(" %c", &resultado);
+		}
         if (resultado == 'V' || resultado == 'v') {
             rodadasVencidas++;
             pontos += 3; // Vitória adiciona 3 pontos
-        } else if (resultado == 'D' || resultado == 'd') {
+        }  if (resultado == 'D' || resultado == 'd') {
             rodadasPerdidas++;
-        } else if (resultado == 'E' || resultado == 'e') {
+        }  if (resultado == 'E' || resultado == 'e') { 
             rodadasEmpatadas++;
             pontos++; // Empate adiciona 1 ponto
-        } else {
-            printf("Opção invalida! Use V, P ou E.\n");
-            rodada--; // Decrementa a variável de rodada para repetir a entrada
         }
         
         
