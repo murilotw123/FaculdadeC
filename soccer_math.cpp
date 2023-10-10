@@ -8,6 +8,7 @@ int main() {
     int golTime1 = 0;
     int golTime2 = 0;
     int fase = 1 ;
+    int anoFundacao;
 
     while (escolha != 2) {
         printf("Bem-vindo ao Jogo!\n");
@@ -26,6 +27,16 @@ int main() {
             printf("BEM-VINDO AO JOGO!\n");
             printf("Qual sera o nome do seu time: ");
             scanf("%s", nome);
+            printf("Qual o ano de fundaçao do seu time?");
+            scanf("%d", anoFundacao);
+            printf("qual o nome do estadio do seu time");
+            //colocar o scanf
+            printf("qual a capacidade maxima do seu estadio");
+            //colocar o scanf
+            printf("quantos titulos de copa do brasil o seu time ja conquistou?");
+            //colocar o scanf
+			printf("");
+			            
             printf("Seja bem-vindo a Copa do Brasil!\n\n");
             printf("Seu time esta nas oitavas de final desta competicao e o primeiro jogo sera contra o America-MG.\n\n");
             system("pause");
@@ -54,19 +65,8 @@ int main() {
                 
                 if (minuto == 75) {
                     printf("PENALTI PARA O AMERICA!!!!!!!!!\n");
-                    printf("Para que seu goleiro consiga evitar o gol resolva a multiplicacao.\n");
-                    printf("Qual e o resultado de 9 * 4? ");
-                    int resposta;
-                    scanf("%d", &resposta);
-
-                    if (resposta == 36) {
-                        printf("PEGA O GOLEIRO!!!!!!\n");
-                        system("pause");
-                    } else {
-                        printf("GOOOOOL, DO AMERICA!!!!!\n");
-                        golTime2++;
-                        system("pause");
-                    } 
+                  	printf("com uma batida colocada o america faz o seu primeiro gol no jogo\n");
+                  	golTime2++;
                 }
 
                 	Sleep(100); 
@@ -76,7 +76,7 @@ int main() {
             if(golTime1 == golTime2){
 				printf("vamos para os penaltis\n");
 				printf("para seu time passar de fase acerte o calculo matematico:");
-				printf("25+20*2\n"); 
+				printf("(25+20)*2\n"); 
 				int resposta;
 				scanf("%d", &resposta);
 				if (resposta == 90) {
@@ -139,7 +139,10 @@ int main() {
                         system("pause");
                     } 
                 }
-
+                if(minuto == 89){
+					printf("o jovem meio campista santista chuta da entrada da area e a bola morre no fundo da rede!!\n");
+					golTime2++;
+				}
                 	Sleep(100); 
             }
 
@@ -177,7 +180,24 @@ int main() {
             // Simulação de um jogo (90 minutos)
             for (int minuto = 1; minuto <= 90; minuto++) {
                 printf("Minuto %d\n", minuto);
+				 if (minuto == 67) {
+                    printf("seu jogador parte para cima da defesa adversaria!\n");
+                    printf("para que para que ele consiga tirar o 0 do placar, acerte a conta...\n");
+                    printf("Qual e o resultado de 50/2+50? ");
+                    int resposta;
+                    scanf("%d", &resposta);
 
+                    if (resposta == 75) {
+                        printf("GOOOLLL, vc abre 1 a 0 na disputa!\n");
+                        golTime1++;
+                        system("pause");
+                    } else {
+                        printf("errouuuu!!\n");
+                       
+                        system("pause");
+                        
+                    } 
+                }
                 if (minuto == 89) {
                     printf("o atacante sao paulino esta vindo em diraçao ao seu gol!\n");
                     printf("para que seu zagueiro tire a bola sem cometer um penalti, acerte a conta...\n");
@@ -242,7 +262,7 @@ int main() {
                 
                 if (minuto == 35) {
                     printf("Falta na entrada da area!!!!\n");
-                    printf("o jogador do palmeiras bate colocado e em uma falha tremenda do goleiro abre 2 a 0 para o time alviverde!!!");
+                    printf("o jogador do palmeiras bate colocado e em uma falha tremenda do goleiro abre 2 a 0 para o time alviverde!!!\n");
                     golTime2++;
                 }
                  if (minuto == 67) {
