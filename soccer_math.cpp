@@ -9,6 +9,7 @@ int main() {
     int golTime2 = 0;
     int fase = 1 ;
     int anoFundacao;
+    
 
     while (escolha != 2) {
         printf("Bem-vindo ao Jogo!\n");
@@ -27,15 +28,11 @@ int main() {
             printf("BEM-VINDO AO JOGO!\n");
             printf("Qual sera o nome do seu time: ");
             scanf("%s", nome);
-            printf("Qual o ano de fundaçao do seu time?");
+            printf("Qual o ano de fundacao do seu time?");
             scanf("%d", anoFundacao);
-            printf("qual o nome do estadio do seu time");
-            //colocar o scanf
-            printf("qual a capacidade maxima do seu estadio");
-            //colocar o scanf
-            printf("quantos titulos de copa do brasil o seu time ja conquistou?");
-            //colocar o scanf
-			printf("");
+            
+            
+			
 			            
             printf("Seja bem-vindo a Copa do Brasil!\n\n");
             printf("Seu time esta nas oitavas de final desta competicao e o primeiro jogo sera contra o America-MG.\n\n");
